@@ -30,7 +30,7 @@ body::-webkit-scrollbar{
     height: 70px;
     border-radius: 100%;
 
-    position: fixed;
+    position: absolute;
     top: 500px;
     left: 70px;
 }

@@ -1,0 +1,154 @@
+:root{
+    --primary-color: #3E475E;
+    --secondary-color: #B3B3B3;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    /*background-color: #000;*/
+    font-family: sans-serif;
+
+    padding: 0;
+    margin: 0;
+}
+
+/*To hide scroll bar and can keep functionality*/
+body::-webkit-scrollbar{
+
+    display: none;
+}
+
+/*Start of Share Button*/
+
+.share-btn{
+    background-color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+
+    position: fixed;
+    top: 500px;
+    left: 70px;
+}
+
+.share-btn a{
+    text-decoration: none;
+}
+
+.share-btn a i{
+
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 70px;
+
+    transition: 0.3s;
+}
+
+/*End of Share Button*/
+
+/*Start of Footer*/
+
+.footer{
+    background-color: var(--primary-color);
+    color: #fff;
+    min-height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px 50px;
+}
+
+.footer .summary{
+
+    /*background-color: cyan;*/
+    width: 200px;
+}
+
+.footer .summary .logo{
+    /*background-color: cyan;*/
+    width: 150px;
+    height: 50px;
+}
+
+.footer .summary .logo span{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    height: 40px;
+
+    margin-left: 1px;
+
+    transform: skew(-20deg);
+}
+
+.footer .summary .logo .tile1{
+    width: 20px;
+    margin-left: 10px;
+}
+
+.footer .summary .logo .tile2{
+    width: 25px;
+}
+
+.footer .summary .logo .tile3{
+    width: 30px;
+}
+
+.footer .summary p{
+    text-align: justify;
+}
+
+.footer .info{
+
+    /*background-color: cyan;*/
+    min-width: 700px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .info p,
+.footer .info a{
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.footer .info a{
+        text-decoration : none;
+        display : block;
+        line-height:3.5;
+}
+
+.footer .info .aboutus i{
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.footer .info .contact span{
+    display : inline-block;
+    margin-right: 20px;
+}
+
+.footer .info a,
+.footer .info .fa-brands{
+
+    transition: 0.1s;
+}
+
+.share-btn a i:hover,
+.footer .info a:hover,
+.footer .info .fa-brands:hover{
+
+    text-shadow: 0 1px 5px #fff;
+}
+
+/*End of Footer*/

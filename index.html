@@ -8,7 +8,11 @@
     <link href="./img/calculator.png" rel="icon" type="img/png" />
 
     <!--General Css1-->
-    <link href="./access/style.css" rel="stylesheet" type="text/css" />
+
+        <!--Share and Mode btn Css-->
+        <link href="./css/shareandmodebtn.css" rel="stylesheet" type="text/css" />
+        <!--Footer Css-->
+        <link href="./css/style.css" rel="stylesheet" type="text/css" />
 
     <!--Fontawesome css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -98,7 +102,16 @@
 
 <!--Start of light and dark mode button -->
 
+<div class="changemodebox">
 
+    <!--            <label for="mode" class="light-btn" >Light</label>-->
+    <div class="container">
+        <input type="checkbox" name="mode" id="mode" class="btn mode" />
+        <span class="ball" ></span>
+    </div>
+    <!--            <label for="mode" class="dark-btn" >Dark</label>-->
+
+</div>
 
 <!--End of light and dark mode button -->
 
@@ -106,7 +119,14 @@
 
     <div class="share-btn">
 
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+
         <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+
 
     </div>
 
@@ -163,22 +183,22 @@
 
             </div>
 
-            <div class="contact">
+<!--            <div class="contact">-->
 
-                <p>Contact</p>
+<!--                <p>Contact</p>-->
 
-                <div class="email">
+<!--                <div class="email">-->
 
-                    <a href="mailto:kyawpsone@gmail.com" id="email" class="email" target="_blank"><span>Email</span>myanmar@gmail.com</a>
+<!--                    <a href="mailto:kyawpsone@gmail.com" id="email" class="email" target="_blank"><span>Email</span>myanmar@gmail.com</a>-->
 
-                </div>
+<!--                </div>-->
 
-                <div class="phone" >
+<!--                <div class="phone" >-->
 
-                    <a href="tel:+95979247005" id="phone" class="phone phone1" target="_blank"><span>Phone</span>+95979247005</a>
-                </div>
+<!--                    <a href="tel:+95979247005" id="phone" class="phone phone1" target="_blank"><span>Phone</span>+95979247005</a>-->
+<!--                </div>-->
 
-            </div>
+<!--            </div>-->
 
         </div>
 
@@ -186,6 +206,9 @@
 
 <!-- End of Footer -->
 
-    <script src="./access/app.js" type="text/javascript"></script>
+    <!--Share and Mode Btn Js-->
+    <script src="./js/shareandmodebtn.js"></script>
+    <!--App Js-->
+    <script src="./js/app.js" type="text/javascript"></script>
 </body>
 </html>

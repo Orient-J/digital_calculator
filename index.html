@@ -9,100 +9,183 @@
 
     <!--General Css1-->
 
+
+
         <!--Share and Mode btn Css-->
         <link href="./css/shareandmodebtn.css" rel="stylesheet" type="text/css" />
+
+        <!--Calculator Css-->
+        <link href="./css/calculator.css" rel="stylesheet" type="text/css" />
+
+        <!--Instruction Css-->
+        <link href="./css/instructions.css" rel="stylesheet" type="text/css" />
+
         <!--Footer Css-->
         <link href="./css/style.css" rel="stylesheet" type="text/css" />
 
-    <!--Fontawesome css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Fontawesome css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-<!-- Start Of Body -->
+<!--Start Of Nav Bar-->
 
-<div class="pane">
-        <span class="display" id="display">
-<!--            <h3>0</h3>-->
-        </span>
-    <div class="btn-pane">
-        <table>
-            <tr>
-                <th>
-                    <input type="button" value="+" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="-" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="*" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="/" class="btn">
-                </th>
-            </tr>
+    <div class="nav-bar">
 
-            <tr>
-                <th>
-                    <input type="button" value="1" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="2" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="3" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="%" class="btn">
-                </th>
-            </tr>
+        <div class="logo nav-logo">
 
-            <tr>
-                <th>
-                    <input type="button" value="4" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="5" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="6" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="CE" class="btn">
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <input type="button" value="7" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="8" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="9" class="btn">
-                </th>
-                <th rowspan="2">
-                    <input type="button" value="=" class="btn">
-                </th>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    <input type="button" value="0" class="btn">
-                </th>
-                <th>
-                    <input type="button" value="." class="btn">
-                </th>
-            </tr>
-        </table>
+            <span class="tile1"></span>
+            <span class="tile2"></span>
+            <span class="tile3"></span>
+
+        </div>
+
+        <div class="link">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Language</a></li>
+            </ul>
+
+        </div>
+
     </div>
+
+<!--End Of Nav Bar-->
+
+<!--____________________________________________________________________________________________________________________________________________-->
+
+<!-- Start Of Calculator -->
+
+<div class="calculator-box">
+    <div class="pane">
+        <span class="display" id="display">
+            <h3>0</h3>
+        </span>
+        <div class="btn-pane">
+            <table>
+                <tr>
+                    <th>
+                        <input type="button" value="+" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="-" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="*" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="/" class="btn">
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <input type="button" value="1" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="2" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="3" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="%" class="btn">
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <input type="button" value="4" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="5" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="6" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="CE" class="btn">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="button" value="7" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="8" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="9" class="btn">
+                    </th>
+                    <th rowspan="2">
+                        <input type="button" value="=" class="btn">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <input type="button" value="0" class="btn">
+                    </th>
+                    <th>
+                        <input type="button" value="." class="btn">
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+<!--        <div><a>Press to Enter full screen calculator</a></div>-->
+    </div>
+
 </div>
-<section style="height:500px"></section>
-<section style="height:500px"></section>
-<!--<section style="height:500px"></section>-->
+
+<!--End of Calculator-->
+
+<!--____________________________________________________________________________________________________________________________________________-->
+
+
+<!--Start of Instructions-->
+
+<section class="instruction-box">
+
+    <div class="box">
+
+        <div class="cal-logo">
+
+            <img src="./img/callogo.png" class="callogo" alt="calculator logo" />
+
+        </div>
+
+        <div class="instruction">
+
+            <h3 class="feedback-head">Identify Our Weakness for us below</h3>
+
+            <p class="description">
+                This page was created using the languages' JavaScript, HTML, and CSS. This is our first project with the intention of using what we've learned on actual projects.
+            </p>
+
+            <div class="comment">
+
+                <label for="comment-area" style="display:none"></label>
+                <textarea id="comment-area" class="comment-area" placeholder="//Write a comment"></textarea>
+                <input type="submit" name="post-btn" id="post-btn" class="btn post-btn" value="Post" />
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--End of Instructions-->
+
+<!--____________________________________________________________________________________________________________________________________________-->
+
 
 <!--Start of light and dark mode button -->
 
-<div class="changemodebox">
+    <div class="changemodebox">
 
     <!--            <label for="mode" class="light-btn" >Light</label>-->
     <div class="container">
@@ -115,15 +198,18 @@
 
 <!--End of light and dark mode button -->
 
+<!--____________________________________________________________________________________________________________________________________________-->
+
+
 <!--Start of Share Button-->
 
     <div class="share-btn">
 
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.facebook.com/login" target="_blank"><i class="fa-brands fa-facebook"></i></a>
 
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/login" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 
-        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.telegram.org/login" target="_blank"><i class="fa-brands fa-telegram"></i></a>
 
         <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
 
@@ -132,9 +218,8 @@
 
 <!--End of Share Button-->
 
+<!--____________________________________________________________________________________________________________________________________________-->
 
-
-<!-- End Of Body -->
 
 <!-- Start Of Footer -->
 
@@ -205,6 +290,9 @@
     </div>
 
 <!-- End of Footer -->
+
+<!--____________________________________________________________________________________________________________________________________________-->
+
 
     <!--Share and Mode Btn Js-->
     <script src="./js/shareandmodebtn.js"></script>

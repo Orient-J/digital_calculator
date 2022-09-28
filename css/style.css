@@ -7,17 +7,20 @@
     --tele-color:  #0088CC;
 }
 
-*{
-    box-sizing: border-box;
-
-}
-
 body{
-    /*background-color: #000;*/
+    background-image: url("./../img/night 1.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
     font-family: sans-serif;
 
     padding: 0;
     margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+
 }
 
 /*To hide scroll bar and can keep functionality*/
@@ -39,6 +42,44 @@ body::-webkit-scrollbar-thumb:hover{
 
 }
 
+/*Start of Nav Bar */
+
+.nav-bar{
+
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 50px;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    min-width: 400px;
+
+    padding: 0;
+    margin-right: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul li{
+    list-style: none;
+}
+
+.nav-bar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+/*End of Nav Bar */
 
 
 
@@ -61,33 +102,39 @@ body::-webkit-scrollbar-thumb:hover{
     width: 200px;
 }
 
-.footer .summary .logo{
+.logo{
     /*background-color: cyan;*/
     width: 150px;
     height: 50px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
-.footer .summary .logo span{
+.logo span{
     display: inline-block;
     background-color: var(--secondary-color);
-    height: 40px;
+    height: 27px;
 
-    margin-left: 1px;
-
-    transform: skew(-20deg);
+    margin-right: 2px;
+    /*margin: auto;*/
+    line-height: 50px;
+    transform: skew(-30deg) translateX(15px);
 }
 
-.footer .summary .logo .tile1{
+.logo .tile1{
+    width: 10px;
+    /*margin-left: 10px;*/
+}
+
+.logo .tile2{
+    width: 15px;
+}
+
+.logo .tile3{
     width: 20px;
-    margin-left: 10px;
-}
-
-.footer .summary .logo .tile2{
-    width: 25px;
-}
-
-.footer .summary .logo .tile3{
-    width: 30px;
 }
 
 .footer .summary p{
@@ -130,15 +177,11 @@ body::-webkit-scrollbar-thumb:hover{
     margin-right: 20px;
 }
 
-.footer .info a,
-.footer .info .fa-brands{
-
-    transition: 0.1s;
+a{
+    transition: all 0.2s;
 }
 
-.share-btn a i:hover,
-.footer .info a:hover,
-.footer .info .fa-brands:hover{
+a:hover{
 
     text-shadow: 0 1px 5px #fff;
 }

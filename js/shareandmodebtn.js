@@ -1,4 +1,5 @@
 let getball = document.querySelector(".ball");
+let cbcontainer = document.querySelector(".changemodebox .container");
 let getinput = document.querySelector(".mode");
 // let getlight = document.querySelector(".light-btn");
 // let getdark  = document.querySelector(".dark-btn");
@@ -25,7 +26,7 @@ getdark.addEventListener("click",function(){
 });
 */
 
-getball.addEventListener("click",function(e){
+cbcontainer.addEventListener("click",function(e){
 
     // console.log(e);
     // console.log(e.target);

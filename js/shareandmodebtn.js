@@ -1,9 +1,17 @@
-let getball = document.querySelector(".ball");
-let cbcontainer = document.querySelector(".changemodebox .container");
-let getinput = document.querySelector(".mode");
+const getball = document.querySelector(".ball");
+const cbcontainer = document.querySelector(".changemodebox .container");
+const getpane = document.querySelector(".pane");
+const getcalbtns = document.querySelectorAll("table tr th input");
+const getinstruction = document.querySelector(".instruction");
+const getpostbtn = getinstruction.lastElementChild.children[getinstruction.lastElementChild.children.length - 1];
+
+
+/*
+
+// let getinput = document.querySelector(".mode");
 // let getlight = document.querySelector(".light-btn");
 // let getdark  = document.querySelector(".dark-btn");
-/*
+/!*
 
 getlight.addEventListener("click",function(){
 
@@ -12,8 +20,8 @@ getlight.addEventListener("click",function(){
     getball.className = "ball active" ;
 
 });
-*/
-/*
+*!/
+/!*
 
 getdark.addEventListener("click",function(){
 
@@ -24,9 +32,11 @@ getdark.addEventListener("click",function(){
 
 
 });
+*!/
+
 */
 
-cbcontainer.addEventListener("click",function(e){
+cbcontainer.addEventListener("click",function(){
 
     // console.log(e);
     // console.log(e.target);
@@ -37,6 +47,7 @@ cbcontainer.addEventListener("click",function(e){
 
     let modebtn = getball.previousElementSibling;
 
+/*
     // console.log(modebtn);
 
     // let checkmode = modebtn.checked ;
@@ -45,19 +56,80 @@ cbcontainer.addEventListener("click",function(e){
 
     // checkmode = !checkmode;
 
+    */
 
-    if( modebtn.checked ){
+    modebtn.checked === true ? modebtn.checked = false : modebtn.checked = true ;
 
-        modebtn.checked = false ;
-        getball.style.backgroundColor = "var(--third-color)";
-        getball.parentElement.style.backgroundColor = "var(--primary-color)" ;
-    }else{
+    changebg(modebtn.checked);
 
-        modebtn.checked = true ;
-        getball.style.backgroundColor = "var(--primary-color)";
-        getball.parentElement.style.backgroundColor = "var(--third-color)";
-    }
+    changebtncolor(modebtn.checked);
 
     getball.classList.toggle("active");
 
 });
+
+// console.log(getpane.children[1].children[0].backgroundColor);
+
+function changebg(cond){
+
+    if(cond){
+
+        getball.style.backgroundColor = "var(--primary-color)";
+        getball.parentElement.style.backgroundColor = "var(--third-color)";
+
+        document.body.style.backgroundImage = `url("./img/day1.png")`;
+
+        getpane.style.backgroundColor = "var(--sixth-color)";
+
+        getpane.children[1].children[0].backgroundColor = "var(--daytable-olor)";
+
+        getpane.nextElementSibling.children[0].style.color = "var(--primary-color)";
+
+        getinstruction.style.color = "var(--primary-color)" ;
+
+        getpostbtn.style.backgroundColor = "var(--primary-color)";
+
+        getpostbtn.style.color = "var(--third-color)";
+
+    }else{
+
+        getball.style.backgroundColor = "var(--third-color)";
+        getball.parentElement.style.backgroundColor = "var(--primary-color)" ;
+
+        document.body.style.backgroundImage = `url("./img/night\ 1.png")`;
+
+        getpane.style.backgroundColor = "var(--primary-color)";
+
+        getpane.children[1].children[0].backgroundColor = "var(--nighttable-color)";
+
+        getpane.nextElementSibling.children[0].style.color = "var(--third-color)";
+
+        getinstruction.style.color = "var(--third-color)";
+
+        getpostbtn.style.backgroundColor = "var(--third-color)";
+
+        getpostbtn.style.color = "var(--primary-color)";
+    }
+
+}
+
+function changebtncolor(cnd){
+
+    let getcalbtn ;
+
+    for( getcalbtn of getcalbtns ){
+
+        if( cnd ){
+
+            getcalbtn.style.backgroundColor = "var(--daybtn-color)";
+
+        }else{
+
+            getcalbtn.style.backgroundColor = "var(--nightbtn-color)";
+        }
+
+    }
+
+}
+
+

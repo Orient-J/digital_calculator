@@ -2,8 +2,11 @@
     --primary-color: #3E475E;
     --secondary-color: #B3B3B3;
     --third-color: #fff;
-    --fourth-color: rgba(0,0,0,25%);
-    --fifth-color: #9EA4B2;
+    --sixth-color: #CE8F89;
+    --nightbtn-color: #9EA4B2;
+    --nighttable-color: rgba(0,0,0,25%);
+    --daybtn-color: #D3C1C0;
+    --daytable-color: #996B67FF;
     --fb-color: #4267b2;
     --linkin-color: #0072b1;
     --tele-color:  #0088CC;
@@ -15,7 +18,6 @@ body{
     background-position: top left;
     background-size: cover;
     font-family: sans-serif;
-
     padding: 0;
     margin: 0;
 }
@@ -196,3 +198,19 @@ a:hover{
 }
 
 /*End of Footer*/
+
+
+/*For Buttons*/
+
+.btn{
+    transition: all 0.3s;
+}
+
+.btn:active{
+
+    transform: scale(0.98);
+}
+
+.btn:focus{
+    outline: none;
+}

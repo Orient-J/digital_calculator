@@ -47,7 +47,7 @@
 
 .pane .btn-pane{
 
-    background-color: var(--primary-color);
+    /*background-color: var(--primary-color);*/
     width: 100%;
     height: 320px;
     border-radius: 10px;
@@ -57,7 +57,7 @@
 
 .pane .btn-pane table{
 
-    background-color: var(--fourth-color);
+    background-color: var(--nighttable-color);
     width: 100%;
     height: 100%;
     /*border: 12px solid var(--third-color);*/
@@ -91,7 +91,7 @@
 
 
 .pane .btn-pane table tr input{
-    background-color: var(--fifth-color);
+    background-color: var(--nightbtn-color);
     width: 100%;
     height: 100%;
     border: none;

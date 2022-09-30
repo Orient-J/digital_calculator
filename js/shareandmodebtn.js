@@ -85,7 +85,7 @@ function changebg(cond){
 
         getpane.nextElementSibling.children[0].style.color = "var(--primary-color)";
 
-        getinstruction.style.color = "var(--primary-color)" ;
+        getinstruction.style.color = "#000" ;
 
         getpostbtn.style.backgroundColor = "var(--primary-color)";
 

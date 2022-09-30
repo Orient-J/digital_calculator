@@ -31,6 +31,7 @@
 }
 
 .pane .display-box .display-screen{
+    background-color: var(--primary-color);
     width: 100%;
     height: 100%;
     font-size: 3em;
